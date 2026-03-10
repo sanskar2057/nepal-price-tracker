@@ -1,0 +1,3 @@
+.venv/ # project-level .gitignore should already ignore it, but safe
+__pycache__/
+*.pyc

@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  // ← NO url here anymore — correct for Prisma 7+
+}
+
+model Store {
+  id        Int       @id @default(autoincrement())
+  slug      String    @unique
+  name      String
+  baseUrl   String
+  logoUrl   String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  prices       Price[]        // ← already there (back to Price)
+  priceHistories PriceHistory[]   // ← ADD THIS LINE (back to PriceHistory)
+}
+
+model Product {
+  id              Int           @id @default(autoincrement())
+  slug            String        @unique
+  name            String
+  brand           String?
+  categorySlug    String
+  mainImageUrl    String?
+  description     String?       @db.Text
+  specs           Json?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  prices          Price[]
+  priceHistories  PriceHistory[]
+}
+
+model Price {
+  id               Int       @id @default(autoincrement())
+  productId        Int
+  storeId          Int
+  priceNpr         Float
+  originalPriceNpr Float?
+  stockStatus      String?
+  url              String
+  scrapedAt        DateTime  @default(now())
+
+  product          Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  store            Store     @relation(fields: [storeId], references: [id])
+
+  @@unique([productId, storeId])
+  @@index([productId])
+  @@index([storeId])
+}
+
+model PriceHistory {
+  id         Int       @id @default(autoincrement())
+  productId  Int
+  storeId    Int
+  priceNpr   Float
+  recordedAt DateTime  @default(now())
+
+  product    Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  store      Store     @relation(fields: [storeId], references: [id])
+
+  @@index([productId, recordedAt(sort: Desc)])
+}

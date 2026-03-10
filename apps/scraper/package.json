@@ -1,0 +1,15 @@
+{
+  "name": "@nepal-price-tracker/scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Price scraper for Daraz, Hamrobazar etc.",
+  "main": "src/main.py",
+  "type": "module",
+  "scripts": {
+    "scrape:daraz": "python src/main.py",
+    "scrape:dev": "python src/main.py --max-items=5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

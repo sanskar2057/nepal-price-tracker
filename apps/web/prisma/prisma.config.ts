@@ -1,6 +1,6 @@
 // prisma.config.ts
 // Prisma 7+ automatically loads .env for env() calls in this file
-
+import "dotenv/config";
 export default {
     schema: "schema.prisma",
 

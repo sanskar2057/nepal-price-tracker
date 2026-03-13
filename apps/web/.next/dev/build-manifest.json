@@ -1,6 +1,31 @@
 {
   "pages": {
-    "/_app": []
+    "/_app": [
+      "static/chunks/1e53f_next_dist_compiled_1a1a5703._.js",
+      "static/chunks/1e53f_next_dist_shared_lib_b17818df._.js",
+      "static/chunks/1e53f_next_dist_client_cdaa55b2._.js",
+      "static/chunks/1e53f_next_dist_f694a056._.js",
+      "static/chunks/1e53f_next_app_a2e2a21d.js",
+      "static/chunks/[next]_entry_page-loader_ts_e1a7a92c._.js",
+      "static/chunks/2c1d1_react-dom_9b362c07._.js",
+      "static/chunks/ae9d3__pnpm_0feb1af9._.js",
+      "static/chunks/[root-of-the-server]__92b99ec4._.js",
+      "static/chunks/project_nepal-price-tracker_apps_web_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-project_nepal-price-tracker_apps_web_pages__app_d46dffec._.js"
+    ],
+    "/_error": [
+      "static/chunks/1e53f_next_dist_compiled_1a1a5703._.js",
+      "static/chunks/1e53f_next_dist_shared_lib_078f3722._.js",
+      "static/chunks/1e53f_next_dist_client_cdaa55b2._.js",
+      "static/chunks/1e53f_next_dist_871cbd41._.js",
+      "static/chunks/1e53f_next_error_0a68d196.js",
+      "static/chunks/[next]_entry_page-loader_ts_e3c148be._.js",
+      "static/chunks/2c1d1_react-dom_9b362c07._.js",
+      "static/chunks/ae9d3__pnpm_0feb1af9._.js",
+      "static/chunks/[root-of-the-server]__0f1ee416._.js",
+      "static/chunks/project_nepal-price-tracker_apps_web_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-project_nepal-price-tracker_apps_web_pages__error_58a7317f._.js"
+    ]
   },
   "devFiles": [],
   "polyfillFiles": [

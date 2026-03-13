@@ -1,14 +1,1930 @@
-[00:00:00.830] Server  LOG     ✓ Ready in 619ms
-[00:00:06.950] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:14.248] Server  LOG     ✓ Compiled in 62ms
-[00:03:14.590] Server  LOG     ✓ Compiled in 51ms
-[00:03:29.723] Server  LOG     ✓ Compiled in 66ms
-[00:03:29.821] Server  LOG     ✓ Compiled in 77ms
-[00:03:29.860] Server  LOG     ✓ Compiled in 25ms
-[00:03:29.906] Server  LOG     ✓ Compiled in 24ms
-[00:03:29.940] Server  LOG     ✓ Compiled in 24ms
-[00:06:53.468] Server  LOG       Reload env: .env
-[00:07:22.406] Server  LOG       Reload env: .env
-[00:07:45.053] Server  LOG       Reload env: .env
-[00:07:46.131] Server  LOG       Reload env: .env
-[00:07:47.319] Server  LOG       Reload env: .env
+[00:00:00.771] Server  LOG     ✓ Ready in 524ms
+[00:00:02.970] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:02:47.844] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {}). If you meant to render a collection of children, use an array instead.
+[00:02:47.916] Server  ERROR   ⨯ ReferenceError: p is not defined
+[00:02:48.052] Server  LOG     ✓ Compiled in 30ms
+[00:02:48.258] Browser ERROR   uncaughtError: ReferenceError: p is not defined
+[00:02:48.324] Server  ERROR   ⨯ ReferenceError: prod is not defined
+[00:02:48.467] Server  LOG     ✓ Compiled in 32ms
+[00:02:48.551] Browser ERROR   uncaughtError: ReferenceError: prod is not defined
+[00:02:48.604] Server  ERROR   ⨯ ReferenceError: produc is not defined
+[00:02:48.832] Browser ERROR   uncaughtError: ReferenceError: produc is not defined
+[00:02:49.101] Server  ERROR   ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug, mainImageUrl, categorySlug, createdAt, updatedAt, latestPrice}). If you meant to render a collection of children, use an array instead.
+[00:02:49.667] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug, mainImageUrl, categorySlug, createdAt, updatedAt, latestPrice}). If you meant to render a collection of children, use an array instead.
+[00:02:49.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:34
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     Rs. {product.}
+     |                                  ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:02:52.036] Server  ERROR   ⨯ Error: Objects are not valid as a React child (found: object with keys {priceNpr, url, scrapedAt, stockStatus}). If you meant to render a collection of children, use an array instead.
+[00:02:52.390] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:46
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     Rs. {product.latestPrice.}
+     |                                              ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:02:52.390] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {priceNpr, url, scrapedAt, stockStatus}). If you meant to render a collection of children, use an array instead.
+[00:02:52.390] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:46
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     Rs. {product.latestPrice.}
+     |                                              ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:02:52.610] Server  LOG     ✓ Compiled in 75ms
+[00:02:52.938] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:02:53.776] Server  LOG     ✓ Compiled in 15ms
+[00:02:54.061] Server  LOG     ✓ Compiled in 52ms
+[00:02:55.750] Server  ERROR   ⨯ Error: Functions are not valid as a child of Client Components. This may happen if you return toLocaleString instead of <toLocaleString /> from render. Or maybe you meant to call this function rather than return it.
+  <div>Rs. {function toLocaleString}</div>
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:02:56.675] Browser ERROR   uncaughtError: Error: Functions are not valid as a child of Client Components. This may happen if you return toLocaleString instead of <toLocaleString /> from render. Or maybe you meant to call this function rather than return it.
+  <div>Rs. {function toLocaleString}</div>
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:02:57.378] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:60
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     Rs. {product.latestPrice.toLocaleString)}
+     |                                                            ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got ')'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:02:57.378] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:60
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     Rs. {product.latestPrice.toLocaleString)_}
+     |                                                            ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got ')'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:02:57.378] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:60
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     Rs. {product.latestPrice.toLocaleString)}
+     |                                                            ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got ')'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:02:57.544] Server  ERROR   ⨯ Error: Functions are not valid as a child of Client Components. This may happen if you return toLocaleString instead of <toLocaleString /> from render. Or maybe you meant to call this function rather than return it.
+  <div>Rs. {function toLocaleString}</div>
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:02:57.905] Browser ERROR   uncaughtError: Error: Functions are not valid as a child of Client Components. This may happen if you return toLocaleString instead of <toLocaleString /> from render. Or maybe you meant to call this function rather than return it.
+  <div>Rs. {function toLocaleString}</div>
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:02:58.365] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:03:05.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:71:2
+Parsing ecmascript source code failed
+  69 |         </Card>
+  70 |     );
+> 71 | }
+     |  ^
+
+Expected '</', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:10.673] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:71:2
+Parsing ecmascript source code failed
+  69 |         </Card>
+  70 |     );
+> 71 | }
+     |  ^
+
+Expected '</', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:13.534] Server  ERROR   ⨯ ReferenceError: Rs is not defined
+[00:03:13.665] Browser ERROR   uncaughtError: ReferenceError: Rs is not defined
+[00:03:17.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {${Rs. product.latestPrice.toLocaleString()}`}
+     |                        ^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:19.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {${`Rs. product.latestPrice.toLocaleString()}`}
+     |                        ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:21.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {${`Rs. product.latestPrice.toLocaleString()`}`}
+     |                        ^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:25.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {${`{Rs. product.latestPrice.toLocaleString()`}`}
+     |                        ^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:28.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {${`Rs. product.latestPrice.toLocaleString()`}`}
+     |                        ^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:28.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {${Rs. product.latestPrice.toLocaleString()`}`}
+     |                        ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:30.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {${`Rs. product.latestPrice.toLocaleString()`}`}
+     |                        ^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:31.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. product.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'no substitution template literal'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:34.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. product$.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'no substitution template literal'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:34.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. product${}.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'template head'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:35.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. product${.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'template head'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:36.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. product$.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'no substitution template literal'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:37.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. product.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'no substitution template literal'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:39.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. 4product.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'no substitution template literal'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:39.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. 4{product.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'no substitution template literal'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:40.668] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. {product.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'no substitution template literal'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:41.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. ${product.latestPrice.toLocaleString()`}`}
+     |                        ^^^^^^^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'template head'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:44.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:24
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                      {{`Rs. ${product.latestPrice.toLocaleString()}`}`}
+     |                        ^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'template head'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:44.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:23
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {{`Rs. ${product.latestPrice.toLocaleString()}`}`}
+     |                       ^^^^^^^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got 'template head'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:47.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:69
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {`Rs. ${product.latestPrice.toLocaleString()}`}`}
+     |                                                                     ^
+  43 |                 </div>
+  44 | 
+  45 |                 {/* Optional: original price if you have it */}
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:03:47.871] Server  LOG     ✓ Compiled in 25ms
+[00:03:48.415] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:04:09.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:66
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {`Rs. ${product.latestPrice.toLocaleString()|}`}
+     |                                                                  ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:04:09.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:67
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {`Rs. ${product.latestPrice.toLocaleString()||}`}
+     |                                                                   ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:04:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:43:18
+Parsing ecmascript source code failed
+  41 |                 <div className="text-2xl font-bold text-primary">
+  42 |                     {`Rs. ${product.latestPrice.toLocaleString()||'}`}
+> 43 |                 </div>
+     |                  ^^^^^
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+  46 |                 {/* {product.latestPrice?.originalPriceNpr && (
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:04:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:67
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {`Rs. ${product.latestPrice.toLocaleString()||'}`}
+     |                                                                   ^^^^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:04:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:67
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {`Rs. ${product.latestPrice.toLocaleString()||}`}
+     |                                                                   ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:04:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:66
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {`Rs. ${product.latestPrice.toLocaleString()|}`}
+     |                                                                  ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:04:36.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:42:65
+Parsing ecmascript source code failed
+  40 |                 {/* Price – big & bold */}
+  41 |                 <div className="text-2xl font-bold text-primary">
+> 42 |                     {`Rs. ${product.latestPrice?toLocaleString()}`}
+     |                                                                 ^
+  43 |                 </div>
+  44 |
+  45 |                 {/* Optional: original price if you have it */}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:04:38.093] Server  ERROR   ⨯ TypeError: product.latestPrice?.priceNprtoLocaleString is not a function
+[00:04:38.668] Browser ERROR   uncaughtError: TypeError: product.latestPrice?.priceNprtoLocaleString is not a function
+[00:04:40.177] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:05:04.871] Server  LOG     ✓ Compiled in 28ms
+[00:05:04.954] Server  LOG     ✓ Compiled in 10ms
+[00:05:06.609] Server  LOG     ✓ Compiled in 24ms
+[00:05:06.863] Server  LOG     ✓ Compiled in 0ms
+[00:05:07.066] Server  LOG     ✓ Compiled in 16ms
+[00:05:22.772] Server  LOG     ✓ Compiled in 24ms
+[00:05:26.670] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:54:59
+Parsing ecmascript source code failed
+  52 |                 {/* Scraped time – small gray text */}
+  53 |                 <p className="text-xs text-muted-foreground mt-2">
+> 54 |                     {`Scrapped at: ${product.latestPrice?.?.toLocaleString()}`}
+     |                                                           ^
+  55 |                 </p>
+  56 |             </CardContent>
+  57 |
+
+Expected '</', got '?'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:05:26.670] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:54:59
+Parsing ecmascript source code failed
+  52 |                 {/* Scraped time – small gray text */}
+  53 |                 <p className="text-xs text-muted-foreground mt-2">
+> 54 |                     {`Scrapped at: ${product.latestPrice??.toLocaleString()}`}
+     |                                                           ^
+  55 |                 </p>
+  56 |             </CardContent>
+  57 |
+
+Expected '</', got '.'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:05:26.670] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:54:59
+Parsing ecmascript source code failed
+  52 |                 {/* Scraped time – small gray text */}
+  53 |                 <p className="text-xs text-muted-foreground mt-2">
+> 54 |                     {`Scrapped at: ${product.latestPrice?.?.toLocaleString()}`}
+     |                                                           ^
+  55 |                 </p>
+  56 |             </CardContent>
+  57 |
+
+Expected '</', got '?'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:30.786] Server  ERROR   ⨯ ReferenceError: pr is not defined
+[00:07:30.854] Server  LOG     ✓ Compiled in 25ms
+[00:07:31.248] Server  ERROR   ⨯ ReferenceError: pro is not defined
+[00:07:31.251] Server  LOG     ✓ Compiled in 1ms
+[00:07:31.313] Server  ERROR   ⨯ ReferenceError: prodic is not defined
+[00:07:31.327] Server  ERROR   ⨯ ReferenceError: prodic is not defined
+[00:07:31.561] Browser ERROR   uncaughtError: ReferenceError: prodic is not defined
+[00:07:31.635] Server  ERROR   ⨯ ReferenceError: prodi is not defined
+[00:07:31.751] Server  LOG     ✓ Compiled in 26ms
+[00:07:32.182] Browser ERROR   uncaughtError: ReferenceError: prodi is not defined
+[00:07:32.264] Server  ERROR   ⨯ ReferenceError: produ is not defined
+[00:07:32.265] Server  LOG     ✓ Compiled in 13ms
+[00:07:32.566] Browser ERROR   uncaughtError: ReferenceError: produ is not defined
+[00:07:32.881] Server  ERROR   ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug, mainImageUrl, categorySlug, createdAt, updatedAt, latestPrice}). If you meant to render a collection of children, use an array instead.
+[00:07:33.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:44:1
+Parsing ecmascript source code failed
+  42 | {
+  43 |     product.
+> 44 | }
+     | ^
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+  47 |                 </div>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:33.667] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug, mainImageUrl, categorySlug, createdAt, updatedAt, latestPrice}). If you meant to render a collection of children, use an array instead.
+[00:07:33.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:44:1
+Parsing ecmascript source code failed
+  42 | {
+  43 |     product.
+> 44 | }
+     | ^
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+  47 |                 </div>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:34.459] Server  ERROR   ⨯ Error: Objects are not valid as a React child (found: object with keys {priceNpr, url, scrapedAt, stockStatus}). If you meant to render a collection of children, use an array instead.
+[00:07:35.471] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:44:1
+Parsing ecmascript source code failed
+  42 | {
+  43 |     product.latestPrice.
+> 44 | }
+     | ^
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+  47 |                 </div>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:35.471] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {priceNpr, url, scrapedAt, stockStatus}). If you meant to render a collection of children, use an array instead.
+[00:07:35.471] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:44:1
+Parsing ecmascript source code failed
+  42 | {
+  43 |     product.latestPrice.
+> 44 | }
+     | ^
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+  47 |                 </div>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:36.075] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:07:37.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:44:1
+Parsing ecmascript source code failed
+  42 | {
+  43 |     product.latestPrice?.priceNpr?
+> 44 | }
+     | ^
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+  47 |                 </div>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:42.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:43:37
+Parsing ecmascript source code failed
+  41 |                 <div className="text-2xl font-bold text-primary">
+  42 | {
+> 43 |     product.latestPrice?.priceNpr? {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+     |                                     ^^^^^^^
+  44 | }
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+
+Expected '</', got 'template head'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:47.816] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:43:92
+Parsing ecmascript source code failed
+  41 |                 <div className="text-2xl font-bold text-primary">
+  42 | {
+> 43 |     product.latestPrice?.priceNpr? `Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+     |                                                                                            ^
+  44 | }
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:47.816] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:43:37
+Parsing ecmascript source code failed
+  41 |                 <div className="text-2xl font-bold text-primary">
+  42 | {
+> 43 |     product.latestPrice?.priceNpr? {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+     |                                     ^^^^^^^
+  44 | }
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+
+Expected '</', got 'template head'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:48.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:44:1
+Parsing ecmascript source code failed
+  42 | {
+  43 |     product.latestPrice?.priceNpr? `Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`
+> 44 | }
+     | ^
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+  47 |                 </div>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:50.668] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:44:1
+Parsing ecmascript source code failed
+  42 | {
+  43 |     product.latestPrice?.priceNpr? `Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`:
+> 44 | }
+     | ^
+  45 |
+  46 |                     {`Rs. ${product.latestPrice?.priceNpr?.toLocaleString()}`}
+  47 |                 </div>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:07:53.093] Server  LOG     ✓ Compiled in 18ms
+[00:07:59.875] Server  LOG     ✓ Compiled in 29ms
+[00:14:13.354] Server  ERROR   ⨯ ReferenceError: foproduct is not defined
+[00:14:13.371] Server  LOG     ✓ Compiled in 51ms
+[00:14:13.482] Server  ERROR   ⨯ ReferenceError: forproduct is not defined
+[00:14:13.541] Browser ERROR   uncaughtError: ReferenceError: forproduct is not defined
+[00:14:13.561] Server  LOG     ✓ Compiled in 29ms
+[00:14:13.638] Server  ERROR   ⨯ ReferenceError: formproduct is not defined
+[00:14:13.750] Server  LOG     ✓ Compiled in 17ms
+[00:14:14.070] Browser ERROR   uncaughtError: ReferenceError: formproduct is not defined
+[00:14:14.147] Server  ERROR   ⨯ ReferenceError: formatproduct is not defined
+[00:14:14.870] Browser ERROR   uncaughtError: ReferenceError: formatproduct is not defined
+[00:14:17.736] Server  LOG     ✓ Compiled in 31ms
+[00:14:17.899] Server  ERROR   ⨯ ReferenceError: formatRproduct is not defined
+[00:14:17.903] Server  LOG     ✓ Compiled in 6ms
+[00:14:18.385] Browser ERROR   uncaughtError: ReferenceError: formatRproduct is not defined
+[00:14:18.466] Server  ERROR   ⨯ ReferenceError: formatRelproduct is not defined
+[00:14:19.670] Browser ERROR   uncaughtError: ReferenceError: formatRelproduct is not defined
+[00:14:19.670] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:56:78
+Parsing ecmascript source code failed
+  54 |                 {/* Scraped time – small gray text */}
+  55 |                 <p className="text-xs text-muted-foreground mt-2">
+> 56 |                     {`Scrapped at: ${formatRel(product.latestPrice?.scrapedAt}`}
+     |                                                                              ^
+  57 |                 </p>
+  58 |             </CardContent>
+  59 |
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:22.564] Server  ERROR   ⨯ ReferenceError: formatRel is not defined
+[00:14:23.666] Browser ERROR   uncaughtError: ReferenceError: formatRel is not defined
+[00:14:29.489] Server  LOG     ✓ Compiled in 26ms
+[00:14:29.576] Server  ERROR   ⨯ ReferenceError: formatRelativeTime is not defined
+[00:14:30.666] Browser ERROR   uncaughtError: ReferenceError: formatRelativeTime is not defined
+[00:14:32.723] Server  LOG     ✓ Compiled in 208ms
+[00:14:33.406] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:14:39.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:87
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt})}`}
+     |                                                                                       ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:39.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:87
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt}})}`}
+     |                                                                                       ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:39.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:87
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt}}'')}`}
+     |                                                                                       ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:40.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:87
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt}})}`}
+     |                                                                                       ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:41.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:87
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt})}`}
+     |                                                                                       ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:44.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:87
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt})}`}
+     |                                                                                       ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:47.762] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:88
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt|)}`}
+     |                                                                                        ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got ')'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:47.762] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx:57:89
+Parsing ecmascript source code failed
+  55 |                 {/* Scraped time – small gray text */}
+  56 |                 <p className="text-xs text-muted-foreground mt-2">
+> 57 |                     {`Scrapped at: ${formatRelativeTime(product.latestPrice?.scrapedAt||)}`}
+     |                                                                                         ^
+  58 |                 </p>
+  59 |             </CardContent>
+  60 |
+
+Expected '</', got ')'
+
+Import trace:
+  Server Component:
+    ./project/nepal-price-tracker/apps/web/src/components/products/ProductCard.tsx
+    ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx
+[00:14:54.411] Server  LOG     ✓ Compiled in 36ms
+[00:14:55.259] Server  LOG     ✓ Compiled in 0ms
+[00:15:55.405] Server  LOG     ✓ Compiled in 58ms
+[00:15:55.820] Server  ERROR   ⨯ ReferenceError: im is not defined
+[00:15:55.999] Server  ERROR   ⨯ ReferenceError: im is not defined
+[00:15:56.003] Server  LOG     ✓ Compiled in 1ms
+[00:15:56.763] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import 
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected 'from', got 'export'
+[00:15:56.763] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import 
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected 'from', got 'export'
+[00:15:56.763] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import 
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected 'from', got 'export'
+[00:15:56.763] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import 
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected 'from', got 'export'
+[00:15:56.763] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import 
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected 'from', got 'export'
+[00:15:56.763] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import 
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected 'from', got 'export'
+[00:15:57.750] Server  LOG     ✓ Compiled in 196ms
+[00:15:57.751] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import Skel
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected ',', got 'export'
+[00:15:57.751] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import Skele
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected ',', got 'export'
+[00:15:57.885] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import Skele
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected ',', got 'export'
+[00:15:57.885] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import { ProductWithPrice } from "@/type/products";
+  3 | import Skele
+> 4 | export default async function ProductsPage() {
+    | ^^^^^^
+  5 |
+  6 |     const placeholderproducts: ProductWithPrice[] = [
+  7 |         {
+
+Expected ',', got 'export'
+[00:15:59.404] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:16:45.327] Server  ERROR   ⨯ ReferenceError: c is not defined
+[00:16:45.332] Server  LOG     ✓ Compiled in 35ms
+[00:16:45.565] Server  ERROR   ⨯ ReferenceError: co is not defined
+[00:16:45.572] Server  LOG     ✓ Compiled in 0ms
+[00:16:45.885] Server  ERROR   ⨯ Error: Could not parse module '[project]/project/nepal-price-tracker/apps/web/src/app/products/page.tsx'
+
+Expected ident
+[00:16:46.030] Server  ERROR   ⨯ Error: Could not parse module '[project]/project/nepal-price-tracker/apps/web/src/app/products/page.tsx'
+
+Expected ident
+[00:16:46.940] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.940] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.940] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.940] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.940] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.940] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.940] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.957] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.957] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.957] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.957] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.957] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:46.957] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const is
+     |       ^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+[00:16:47.042] Server  ERROR   ⨯ ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const isLoading
+     |       ^^^^^^^^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+
+
+[00:16:47.358] Browser ERROR   uncaughtError: Error: ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:23:7
+Parsing ecmascript source code failed
+  21 | }
+  22 | export default async function ProductsPage() {
+> 23 | const isLoading
+     |       ^^^^^^^^^
+  24 |     const placeholderproducts: ProductWithPrice[] = [
+  25 |         {
+  26 |             id: 1,
+
+'const' declarations must be initialized
+
+
+[00:16:47.660] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:24:5
+Parsing ecmascript source code failed
+  22 | export default async function ProductsPage() {
+  23 | const isLoading=
+> 24 |     const placeholderproducts: ProductWithPrice[] = [
+     |     ^^^^^
+  25 |         {
+  26 |             id: 1,
+  27 |             name: "Redmi Note 13 Pro",
+
+Expression expected
+[00:16:47.660] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:24:5
+Parsing ecmascript source code failed
+  22 | export default async function ProductsPage() {
+  23 | const isLoading=
+> 24 |     const placeholderproducts: ProductWithPrice[] = [
+     |     ^^^^^
+  25 |         {
+  26 |             id: 1,
+  27 |             name: "Redmi Note 13 Pro",
+
+Expression expected
+[00:16:47.684] Server  LOG     ✓ Compiled in 82ms
+[00:16:47.792] Server  ERROR   ⨯ ReferenceError: tr is not defined
+[00:16:47.868] Server  LOG     ✓ Compiled in 22ms
+[00:16:48.017] Browser ERROR   uncaughtError: ReferenceError: tr is not defined
+[00:16:48.552] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:16:56.159] Server  LOG     ✓ Compiled in 52ms
+[00:16:56.268] Server  ERROR   ⨯ ReferenceError: is is not defined
+[00:16:56.288] Server  ERROR   ⨯ ReferenceError: is is not defined
+[00:16:56.555] Browser ERROR   uncaughtError: ReferenceError: is is not defined
+[00:16:56.637] Server  ERROR   ⨯ ReferenceError: isL is not defined
+[00:16:56.830] Browser ERROR   uncaughtError: ReferenceError: isL is not defined
+[00:16:56.928] Server  ERROR   ⨯ ReferenceError: isLo is not defined
+[00:16:56.931] Server  LOG     ✓ Compiled in 40ms
+[00:16:57.631] Browser ERROR   uncaughtError: ReferenceError: isLo is not defined
+[00:16:58.189] Server  ERROR   ⨯ "upstream image response failed for" "https://img.drz.lazcdn.com/..." 404
+[00:16:58.669] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:46:24
+Parsing ecmascript source code failed
+  44 |                 Latest Smartphones from Daraz
+  45 |             </h1>
+> 46 |             {isLoading?}
+     |                        ^
+  47 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  48 |                 {placeholderproducts.map((product) => (
+  49 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:00.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:47:13
+Parsing ecmascript source code failed
+  45 |             </h1>
+  46 |             {isLoading?
+> 47 |             }
+     |             ^
+  48 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  49 |                 {placeholderproducts.map((product) => (
+  50 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:00.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |             
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:10.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+[00:17:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></d    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></di    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading?
+  47 |         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:13.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading ?
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:20.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:47:17
+Parsing ecmascript source code failed
+  45 |             </h1>
+  46 |             {isLoading ?()
+> 47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+     |                 ^
+  48 |         }
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+
+Expression expected
+[00:17:20.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:9
+Parsing ecmascript source code failed
+  46 |             {isLoading ?(
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+> 48 |         }
+     |         ^
+  49 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  50 |                 {placeholderproducts.map((product) => (
+  51 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:24.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:49:9
+Parsing ecmascript source code failed
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+  48 |                 
+> 49 |         }
+     |         ^
+  50 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  51 |                 {placeholderproducts.map((product) => (
+  52 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:26.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:49:9
+Parsing ecmascript source code failed
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+  48 |             )
+> 49 |         }
+     |         ^
+  50 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  51 |                 {placeholderproducts.map((product) => (
+  52 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:27.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:49:9
+Parsing ecmascript source code failed
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+  48 |             ):
+> 49 |         }
+     |         ^
+  50 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  51 |                 {placeholderproducts.map((product) => (
+  52 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:28.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:49:9
+Parsing ecmascript source code failed
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>    
+  48 |             ):()
+> 49 |         }
+     |         ^
+  50 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  51 |                 {placeholderproducts.map((product) => (
+  52 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:29.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:51:9
+Parsing ecmascript source code failed
+  49 |                 
+  50 |             )
+> 51 |         }
+     |         ^
+  52 |             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  53 |                 {placeholderproducts.map((product) => (
+  54 |                     <ProductCard key={product.id} product={product} />
+
+Expected '</', got '}'
+[00:17:32.786] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:51:9
+Parsing ecmascript source code failed
+  49 |
+  50 |             )
+> 51 |         }
+     |         ^
+  52 |           
+  53 |         </div>
+  54 |     )
+
+Expected '</', got '}'
+[00:17:40.298] Server  ERROR   ⨯ ReferenceError: A is not defined
+[00:17:40.503] Browser ERROR   uncaughtError: ReferenceError: A is not defined
+[00:17:40.594] Server  ERROR   ⨯ ReferenceError: Ar is not defined
+[00:17:40.596] Server  LOG     ✓ Compiled in 26ms
+[00:17:41.058] Browser ERROR   uncaughtError: ReferenceError: Ar is not defined
+[00:17:41.321] Server  ERROR   ⨯ Error: Functions are not valid as a child of Client Components. This may happen if you return Array instead of <Array /> from render. Or maybe you meant to call this function rather than return it.
+  <div className=... children={function Array}>
+                              ^^^^^^^^^^^^^^^^
+[00:17:42.103] Server  LOG     ✓ Compiled in 56ms
+[00:17:42.667] Browser ERROR   uncaughtError: Error: Functions are not valid as a child of Client Components. This may happen if you return Array instead of <Array /> from render. Or maybe you meant to call this function rather than return it.
+  <div className=... children={function Array}>
+                              ^^^^^^^^^^^^^^^^
+[00:17:45.032] Server  ERROR   ⨯ TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+[00:17:45.666] Browser ERROR   uncaughtError: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+[00:17:48.372] Server  LOG     ✓ Compiled in 39ms
+[00:17:48.646] Server  LOG     ✓ Compiled in 41ms
+[00:17:48.881] Server  ERROR   ⨯ ReferenceError: le is not defined
+[00:17:48.888] Server  LOG     ✓ Compiled in 40ms
+[00:17:48.996] Server  ERROR   ⨯ ReferenceError: leng is not defined
+[00:17:49.063] Server  ERROR   ⨯ ReferenceError: leng is not defined
+[00:17:49.086] Browser ERROR   uncaughtError: ReferenceError: leng is not defined
+[00:17:49.190] Server  ERROR   ⨯ ReferenceError: lengt is not defined
+[00:17:49.193] Server  LOG     ✓ Compiled in 15ms
+[00:17:49.666] Browser ERROR   uncaughtError: ReferenceError: lengt is not defined
+[00:17:50.448] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:41
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:})}
+     |                                         ^
+  49 |                 </div>
+  50 |             ) : (
+  51 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+Expected '</', got '}'
+[00:17:53.429] Server  ERROR   ⨯ TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+[00:17:53.437] Server  LOG     ✓ Compiled in 14ms
+[00:17:53.539] Server  ERROR   ⨯ TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+[00:17:53.543] Server  LOG     ✓ Compiled in 27ms
+[00:17:53.614] Server  ERROR   ⨯ TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+[00:17:54.406] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:44
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.)}
+     |                                            ^
+  49 |                 </div>
+  50 |             ) : (
+  51 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+Expected '</', got ')'
+[00:17:54.406] Browser ERROR   uncaughtError: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+[00:17:54.495] Server  ERROR   ⨯ TypeError: {(intermediate value)}.map is not a function
+[00:17:55.545] Browser ERROR   uncaughtError: TypeError: {(intermediate value)}.map is not a function
+[00:17:55.642] Server  ERROR   ⨯ ReferenceError: _ is not defined
+[00:17:55.875] Browser ERROR   uncaughtError: ReferenceError: _ is not defined
+[00:17:55.965] Server  ERROR   ⨯ TypeError: {(intermediate value)}.map is not a function
+[00:17:56.167] Browser ERROR   uncaughtError: TypeError: {(intermediate value)}.map is not a function
+[00:17:56.250] Server  ERROR   ⨯ ReferenceError: i is not defined
+[00:17:56.665] Browser ERROR   uncaughtError: ReferenceError: i is not defined
+[00:17:58.826] Server  ERROR   ⨯ ReferenceError: _ is not defined
+[00:17:59.577] Browser ERROR   uncaughtError: ReferenceError: _ is not defined
+[00:17:59.656] Server  ERROR   ⨯ ReferenceError: _ is not defined
+[00:18:00.668] Browser ERROR   uncaughtError: ReferenceError: _ is not defined
+[00:18:03.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:33
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=)}
+     |                                 ^^^^^^^^^^^^^^^^^^^
+  49 |                 </div>
+  50 |             ) : (
+  51 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+The left-hand side of an assignment expression must be a variable or a property access.
+[00:18:03.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>)}
+     |                                                    ^^
+  49 |                 </div>
+  50 |             ) : (
+  51 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+Expected '</', got '=>'
+[00:18:08.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>())}
+     |                                                    ^^
+  49 |                 </div>
+  50 |             ) : (
+  51 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+Expected '</', got '=>'
+[00:18:08.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:11.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:11.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <P
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:11.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <Pr
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:11.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <Pro
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:11.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <Prod
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:11.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <Produ
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:11.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <Produd
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:12.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:13.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton 
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:13.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton i
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:13.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton in
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:13.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton ind
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:13.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton inde
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:14.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton index
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:14.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton index=
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:19.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton k
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:19.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton ke
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:19.666] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton key
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:20.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton key=
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:21.665] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton key={}
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:22.667] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton key={i}
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:23.668] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton key={i}/
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:23.668] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:52
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({length:4}.map(_,i)=>(
+     |                                                    ^^
+  49 |                         <ProductCardSkeleton key={i}/>
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:24.678] Browser ERROR   ./project/nepal-price-tracker/apps/web/src/app/products/page.tsx:48:56
+Parsing ecmascript source code failed
+  46 |             {isLoading ? (
+  47 |                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+> 48 |                     {Array.from({ length: 4 }.map(_, i)=>(
+     |                                                        ^^
+  49 |                     <ProductCardSkeleton key={i} />
+  50 |                     ))}
+  51 |                 </div>
+
+Expected '</', got '=>'
+[00:18:30.874] Server  LOG     ✓ Compiled in 34ms
+[00:21:38.557] Server  LOG       Reload env: .env
+[00:21:38.800] Server  LOG     ✓ Compiled in 0ms
+[00:22:06.166] Server  LOG       Reload env: .env
+[00:22:10.254] Server  LOG       Reload env: .env
+[00:28:57.657] Server  LOG       Reload env: .env
+[00:28:57.889] Server  LOG       Reload env: .env
+[00:28:57.994] Server  LOG       Reload env: .env
+[00:28:58.114] Server  LOG       Reload env: .env
+[01:20:35.456] Server  LOG     ✓ Compiled in 325ms
+[01:20:42.420] Browser WARN    Image with src "https://img.drz.lazcdn.com/static/np/p/804b029ceaa4c8694ae4aa7faea2610e.jpg_200x200q80.avif" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:20:42.420] Browser WARN    Image with src "https://img.drz.lazcdn.com/static/np/p/804b029ceaa4c8694ae4aa7faea2610e.jpg_200x200q80.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:20:42.420] Browser WARN    Image with src "https://img.drz.lazcdn.com/static/np/p/3e33cb36c043f4432ab47f2893196452.jpg_200x200q80.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:20:42.420] Browser WARN    Image with src "https://img.drz.lazcdn.com/static/np/p/810ea35162b3dcf137e79434b7245bbe.jpg_200x200q80.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:20:42.420] Browser WARN    Image with src "https://img.drz.lazcdn.com/g/kf/S9f138653ec5b47039aaf654b8cd86871G.jpg_200x200q80.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:20:42.420] Browser WARN    Image with src "https://img.drz.lazcdn.com/static/np/p/c7ac4650e09b1ce169ae8eadfe3ef638.png_200x200q80.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:20:46.603] Browser WARN    Image with src "https://img.drz.lazcdn.com/static/np/p/804b029ceaa4c8694ae4aa7faea2610e.jpg_200x200q80.avif" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:20:55.234] Browser WARN    Image with src "https://img.drz.lazcdn.com/static/np/p/804b029ceaa4c8694ae4aa7faea2610e.jpg_200x200q80.avif" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading

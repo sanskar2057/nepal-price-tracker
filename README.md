@@ -188,10 +188,10 @@ python src/main.py
 
 ---
 
-# 📜 License
+## Important Notice
 
-MIT License
-
----
-
-⭐ If you find this project interesting, consider **starring the repository**.
+This project is a **personal learning/portfolio demonstration only**.
+- Scraping is done manually and infrequently (5–12 items per run).
+- No personal data is collected.
+- No commercial use, monetization, or redistribution of scraped data.
+- Respect website terms — do not deploy this scraper publicly or run it at high frequency.r
